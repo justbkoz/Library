@@ -20,11 +20,11 @@
         <input type='text' id='pages' name='pages'><br><br>
         <div>Read yet?</div>
         <label for='read'>Yes</label>
-        <input type='radio' id='read' name='read' checked value='Have read'>
+        <input type='radio' id='read' name='read' checked value='true'>
         <label for='notRead'>No</label>
-        <input type='radio' id='notRead' name='read' value='Have not read'><br><br>
-        <input type='reset' id='reset'>
-        <input type='submit' id='submit' value='Submit'>
+        <input type='radio' id='notRead' name='read' value='false'><br><br>
+        <input type='button' id='cancel' value='Cancel'>
+        <input type='button' id='submit' value='Submit'>
 
     </form>
     <div id='testDiv'></div>
@@ -34,3 +34,7 @@
 </body>
 
 </html>
+
+
+<!--type=submit resets the page, im guessing I'll go back to a submit button after
+I figure out local or cload storage... -->
