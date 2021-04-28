@@ -1,3 +1,83 @@
 h1 {
     text-align: center;
+    color: mintcream;
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
 }
+
+body {
+    background-color: 575366;
+}
+
+
+#newBookButton {
+    text-align: center;
+    color: mintcream;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    background-color: 5762D5;
+    width: 250px;
+    min-height: 125;
+    border-radius: 25px;
+    border: 2px solid 5753661;
+
+}
+
+#newBook {
+    text-align: justify;
+    color: mintcream;
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    background-color: 5762D5;
+    width: 250px;
+    min-height: 125;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 10px;
+}
+
+#form {
+    text-align: justify;
+    color: mintcream;
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    background-color: 5762D5;
+    width: 250px;
+    min-height: 125;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 10px;
+}
+
+#library {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 5% .5%;
+    width: 95vw;
+    background-color: 575366;
+    /* background-color:32292F; darker color if needed*/
+
+}
+
+.book {
+    text-align: justify;
+    color: mintcream;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    background-color: 5762D5;
+    width: 250px;
+    min-height: 125;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 10px;
+}
+
+.book::first-line {
+    font-size: x-large;  
+}
+/* need reactive font sizes */

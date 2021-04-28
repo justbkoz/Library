@@ -10,25 +10,23 @@
 
 <body>
     <h1>My Library</h1>
-
-    <form id='form'>
-        <label for='title'>Title:</label>
-        <input type='text' id='title' name='title'><br><br>
-        <label for='author'>Author:</label>
-        <input type='text' id='author' name='author'><br><br>
-        <label for='pages'>Pages:</label>
-        <input type='text' id='pages' name='pages'><br><br>
-        <div>Read yet?</div>
-        <label for='read'>Yes</label>
-        <input type='radio' id='read' name='read' checked value='true'>
-        <label for='notRead'>No</label>
-        <input type='radio' id='notRead' name='read' value='false'><br><br>
-        <input type='button' id='cancel' value='Cancel'>
-        <input type='button' id='submit' value='Submit'>
-
-    </form>
-    <div id='testDiv'></div>
-    <div id='books'></div>
+    <div id='library'>
+        <div id='newBook'>
+            <button id=newBookButton>Click Here to <br>add a book!</button>
+        </div>
+        <form id='form'>
+            <input type='text' id='title' name='title' placeholder='Title'>
+            <input type='text' id='author' name='author' placeholder='Author'>
+            <input type='text' id='pages' name='pages' placeholder='# of pages'>
+            <div>Read yet?</div>
+            <label for='read'>Yes</label>
+            <input type='radio' id='read' name='read' checked value='Have Read'>
+            <label for='notRead'>No</label>
+            <input type='radio' id='notRead' name='read' value='Have not Read'><br><br>
+            <input type='button' id='cancel' value='Cancel'>
+            <input type='button' id='submit' value='Submit'>
+        </form>
+    </div>
 
     <script src='library.js'></script>
 </body>
