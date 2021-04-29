@@ -10,7 +10,6 @@ body {
     background-color: 575366;
 }
 
-
 #newBookButton {
     text-align: center;
     color: mintcream;
@@ -19,10 +18,9 @@ body {
     font-weight: bold;
     background-color: 5762D5;
     width: 250px;
-    min-height: 125;
+    height: 140px;
     border-radius: 25px;
     border: 2px solid 5753661;
-
 }
 
 #newBook {
@@ -33,7 +31,7 @@ body {
     font-weight: bold;
     background-color: 5762D5;
     width: 250px;
-    min-height: 125;
+    height: 140px;
     border-radius: 25px;
     border: 2px solid #73AD21;
     padding: 10px;
@@ -47,7 +45,7 @@ body {
     font-weight: bold;
     background-color: 5762D5;
     width: 250px;
-    min-height: 125;
+    height: 140px;
     border-radius: 25px;
     border: 2px solid #73AD21;
     padding: 10px;
@@ -59,8 +57,6 @@ body {
     gap: 5% .5%;
     width: 95vw;
     background-color: 575366;
-    /* background-color:32292F; darker color if needed*/
-
 }
 
 .book {
@@ -71,7 +67,7 @@ body {
     font-weight: bold;
     background-color: 5762D5;
     width: 250px;
-    min-height: 125;
+    height: 140px;
     border-radius: 25px;
     border: 2px solid #73AD21;
     padding: 10px;
@@ -80,4 +76,46 @@ body {
 .book::first-line {
     font-size: x-large;  
 }
-/* need reactive font sizes */
+
+.radioButtons{
+    font-size: 14px;
+}
+
+.radioButtons input[type="radio"] {
+  display: none;
+}
+
+.radioButtons label {
+  display: inline-block;
+  background-color: 5762D5;
+  padding: 1px 1px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 10px;
+  border: 2px solid #73AD21;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  background-color: 32292F;
+  font-size: 14px;
+} 
+
+.radioButtons label:hover {
+    border: 3px solid #73AD21;
+}
+
+.delete {
+    float: right;
+    color:darkred;
+    cursor: pointer;
+    background-color: darkblue;
+    border-radius: 4px;
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.delete:hover {
+    opacity: 1;
+    font-weight: bold;
+}
