@@ -1,13 +1,29 @@
 let myLibrary = [];
-function Book(title, author, pages, read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
-}
+// function Book(title, author, pages, read) {
+//     this.title = title
+//     this.author = author
+//     this.pages = pages
+//     this.read = read
+// }
 
-Book.prototype.info = function () {
-    return `${this.title}\n\n By: ${this.author}\n ${this.pages} pages`;
+// Book.prototype.info = function () {
+//     return `${this.title}\n\n By: ${this.author}\n ${this.pages} pages`;
+// }
+
+//Keeping the above code for reference.
+//refactored into a Book Class per assignment below.
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.read = read
+    }
+
+    get info() {
+        return `${this.title}\n\n By: ${this.author}\n ${this.pages} pages`;
+
+    }
 }
 
 document.getElementById('submit').addEventListener('click', function () {
@@ -42,7 +58,7 @@ function renderLibrary() {
         newDiv.className = 'book';
         newDiv.id = `book${i}`;
         newDiv.setAttribute('data-arrIndex', `${i}`);
-        newDiv.innerText = `${myLibrary[i].info()}`
+        newDiv.innerText = `${myLibrary[i].info}`
         document.getElementById('library').appendChild(newDiv);
 
         document.getElementById(`book${i}`).innerHTML +=
@@ -79,12 +95,3 @@ myLibrary.push(new Book('The Hobbit', 'Tolkien', '495', 'Have Read'))
 myLibrary.push(new Book('The Cat in the Hat', 'Dr. Suess', '49', 'Have not Read'))
 myLibrary.push(new Book('Of Mice and Men', 'John Steinbeck', '205', 'Have Read'))
 renderLibrary();
-
-
-
-
-
-
-
-
-
